@@ -39,12 +39,13 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 yesBtn.addEventListener("click", () => {
   title.textContent = "Yippeeee!";
-  catImg.src = "./meow%20meme.gif";
+  catImg.src = "./meow-meme.gif";
 
   letterWindow.classList.add("final");
   buttons.style.display = "none";
   finalText.style.display = "block";
 });
+
 
 
 
