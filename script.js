@@ -15,8 +15,8 @@ const finalText = document.getElementById("final-text");
 console.log({ envelope, letter, letterWindow, noBtn, yesBtn });
 
 function pinkBoom(x, y) {
-  const count = 60;            
-  const spread = 220;          
+  const count = 120;            
+  const spread = 320;          
   const duration = 800;        
 
   for (let i = 0; i < count; i++) {
@@ -90,6 +90,7 @@ yesBtn.addEventListener("click", () => {
   buttons.style.display = "none";
   finalText.style.display = "block";
 });
+
 
 
 
