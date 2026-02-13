@@ -96,7 +96,7 @@ p {
 }
 
 .letter-window.final .cat {
-    width: 250px;
+    width: 300px;
 }
 
 /* buttons */
@@ -148,5 +148,6 @@ display: inline-block;
     border-radius: 12px;
 
 }
+
 
 
