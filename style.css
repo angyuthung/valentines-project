@@ -28,8 +28,8 @@ body {
 
 
 .letter-window.final .cat {
-    width: 200px;
-    animation: pop 0.4s ease-out;
+  width: min(260px, 60vw);
+  max-width: 320px;
 }
 
 
@@ -144,6 +144,7 @@ display: inline-block;
     border-radius: 12px;
 
 }
+
 
 
 
