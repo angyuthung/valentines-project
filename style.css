@@ -92,7 +92,7 @@ p {
 }
 
 .letter-window.final .cat {
-    width: 800px;
+    width: 600px;
 }
 
 /* buttons */
@@ -152,6 +152,7 @@ display: inline-block;
   50%  { transform: rotate( 2deg) translateY(-2px); }
   100% { transform: rotate(-2deg) translateY(0); }
 }
+
 
 
 
