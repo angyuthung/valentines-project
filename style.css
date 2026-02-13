@@ -28,7 +28,7 @@ body {
 
 
 .letter-window.final .cat {
-    width: 380px;
+    width: 300px;
     animation: pop 0.4s ease-out;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 .letter-window.final .cat {
-    width: 600px;
+    width: 400px;
 }
 
 /* buttons */
@@ -152,6 +152,7 @@ display: inline-block;
   50%  { transform: rotate( 2deg) translateY(-2px); }
   100% { transform: rotate(-2deg) translateY(0); }
 }
+
 
 
 
