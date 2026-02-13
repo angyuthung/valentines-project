@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Valentine Letter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,39 +13,41 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
+
   <body>
     <!-- Envelope Screen -->
     <div id="envelope-container">
-      <img src="envelope.jpeg" alt="Envelope" id="envelope" />
+      <img src="./envelope.jpeg" alt="Envelope" id="envelope" />
       <p>♡ Letter for You ♡</p>
     </div>
 
     <!-- Letter Screen -->
     <div id="letter-container">
       <div class="letter-window">
-        <h2 id="letter-title"> Will you be my Valentine again next year? :3</h2>
+        <h2 id="letter-title">Will you be my Valentine again next year? :3</h2>
 
         <img src="./meow1.jpeg" class="cat" id="letter-cat" alt="cat" />
 
         <div class="buttons" id="letter-buttons">
-          <img src="yes.jpeg" class="btn yes-btn" alt="Yes" />
+          <img src="./yes.jpeg" class="btn yes-btn" alt="Yes" id="yes-btn" />
 
           <div class="no-wrapper">
-            <img src="no.jpeg" class="btn no-btn" alt="No" />
+            <img src="./no.jpeg" class="btn no-btn" alt="No" id="no-btn" />
           </div>
         </div>
 
         <p id="final-text" class="final-text" style="display: none">
-          <strong>Luv uuu <3</strong>
+          <strong>Luv uuu &lt;3</strong>
         </p>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
 
+    <!-- script must be LAST -->
+    <script src="./script.js"></script>
+  </body>
 </html>
+
 
 
 
