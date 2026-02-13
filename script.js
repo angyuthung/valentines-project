@@ -14,6 +14,49 @@ const finalText = document.getElementById("final-text");
 // Safety check (helps debugging)
 console.log({ envelope, letter, letterWindow, noBtn, yesBtn });
 
+function pinkBoom(x, y) {
+  const count = 60;            
+  const spread = 220;          
+  const duration = 800;        
+
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement("div");
+    p.className = "boom-particle";
+
+    
+    const colors = ["#ff4fa3", "#ff7ac8", "#ff9ad5", "#ff2f7a", "#ffd1e8"];
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+    
+    p.style.left = `${x}px`;
+    p.style.top = `${y}px`;
+
+    
+    const angle = Math.random() * Math.PI * 2;
+    const dist = Math.random() * spread;
+    const dx = Math.cos(angle) * dist;
+    const dy = Math.sin(angle) * dist;
+
+    
+    const size = 6 + Math.random() * 10;
+    p.style.width = `${size}px`;
+    p.style.height = `${size}px`;
+
+    document.body.appendChild(p);
+
+   
+    p.animate(
+      [
+        { transform: "translate(-50%, -50%) translate(0px, 0px)", opacity: 1 },
+        { transform: `translate(-50%, -50%) translate(${dx}px, ${dy}px)`, opacity: 0 }
+      ],
+      { duration, easing: "cubic-bezier(.1,.9,.2,1)" }
+    );
+
+    setTimeout(() => p.remove(), duration + 50);
+  }
+}
+
 // Click Envelope
 envelope.addEventListener("click", () => {
   envelope.style.display = "none";
@@ -39,12 +82,15 @@ noBtn.addEventListener("mouseover", () => {
 // YES is clicked
 yesBtn.addEventListener("click", () => {
   title.textContent = "Yippeeee!";
+  const rect = yesBtn.getBoundingClientRect();
+  pinkBoom(rect.left + rect.width / 2, rect.top + rect.height / 2);
   catImg.src = "./meow-meme.gif";
 
   letterWindow.classList.add("final");
   buttons.style.display = "none";
   finalText.style.display = "block";
 });
+
 
 
 
