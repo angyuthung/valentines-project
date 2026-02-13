@@ -146,6 +146,15 @@ display: inline-block;
 }
 
 
+/* --- Cute wobble for the cat gif --- */
+@keyframes wobble {
+  0%   { transform: rotate(-2deg) translateY(0); }
+  50%  { transform: rotate( 2deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
+
+
 
 
 
