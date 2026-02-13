@@ -90,13 +90,13 @@ p {
 
 
 .cat {
-    width: 250px;
+    width: 200px;
     margin: 10px 0;
     transition: width 0.4s ease;
 }
 
 .letter-window.final .cat {
-    width: 180px;
+    width: 250px;
 }
 
 /* buttons */
@@ -148,4 +148,5 @@ display: inline-block;
     border-radius: 12px;
 
 }
+
 
