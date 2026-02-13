@@ -26,7 +26,7 @@ envelope.addEventListener("click", () => {
 
 // Move the NO button
 noBtn.addEventListener("mouseover", () => {
-  const distance = 200; // min=max=200 so just use 200
+  const distance = 150; // min=max=200 so just use 200
   const angle = Math.random() * Math.PI * 2;
 
   const moveX = Math.cos(angle) * distance;
@@ -45,6 +45,7 @@ yesBtn.addEventListener("click", () => {
   buttons.style.display = "none";
   finalText.style.display = "block";
 });
+
 
 
 
